@@ -20,12 +20,4 @@ plt.ylabel("Jumlah Penumpang")
 plt.xticks([0, 1], ['Bersama Keluarga', 'Sendirian']) # Mengganti label sumbu x
 plt.show()
 
-# Visualisasi distribusi variabel 'is_alone'
-plt.figure(figsize=(8, 6))
-sns.countplot(x='is_alone', data=titanic, palette='viridis')
-plt.title("Distribusi Penumpang yang Bepergian Sendirian vs. Bersama Keluarga")
-plt.xlabel("Sendirian (1) / Bersama Keluarga (0)")
-plt.ylabel("Jumlah Penumpang")
-plt.xticks([0, 1], ['Bersama Keluarga', 'Sendirian']) # Mengganti label sumbu x
-plt.savefig('distribusi_is_alone.png') # Tambahkan baris ini untuk menyimpan gambar
-plt.show()
+
